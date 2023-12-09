@@ -26,7 +26,7 @@ img{
 }
 
 
-                                      /*=========HEADER=========*/
+                                      /*====================HEADER SECTION====================*/
 
 .container{
     max-width: 320px;
@@ -184,28 +184,24 @@ img{
     .container{
         max-width: 1158px;
     }
-}
-@media (min-width: 1158px){
     .logo-link-header{
         padding-top: 24px;
         padding-bottom: 24px;
     } 
-}
-    
-@media  (min-width: 1158px){
-  .address-menu{
+     .address-menu{
     flex-direction: row;
     gap: 40px;
   }
-}
-@media  (min-width: 1158px){
-    .address-link{
+  .address-link{
         padding: 24px 0;
             font-size: 16px;
             line-height: 1.5;
             letter-spacing: 0.02em;
     }
+
 }
+
+
 .address-link:hover,
 .address-link:focus {
     color: #404BBF;
@@ -215,7 +211,7 @@ img{
     color: #404BBF;
 }
 
-                                  /*================ MAIN CONTENT==================*/
+                                  /*=================HERO SECTION===================*/
 
 .hero{
     background-image: linear-gradient(rgba(46, 47, 66, 0.70),
@@ -229,44 +225,15 @@ img{
     margin-right: auto;
 }
 
-
-
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx){ 
-    @media (max-width: 767px){
-    .hero{
-        background-image: linear-gradient(rgba(46, 47, 66, 0.70),
-        rgba(46, 47, 66, 0.70)),
-        url(../images/hero_mob2x.jpg); 
-    }
-}
-      @media(min-width: 768px){
-        .hero{
-            background-image: linear-gradient(rgba(46, 47, 66, 0.70),
-                    rgba(46, 47, 66, 0.70)),
-                    url(../images/hero_tab2x.jpg);
-        }
-     @media (min-width: 1158px){
-        .hero{
-            background-image: linear-gradient(rgba(46, 47, 66, 0.70),
-                        rgba(46, 47, 66, 0.70)),
-                        url(../images/hero2x.jpg);
-        }
-     }
-      }
-}
-
-
 @media (min-device-pixel-ratio: 1),
 (min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    @media (min-width: 768px){
+(min-resolution: 2dppx), (min-width: 768px){
         .hero{
             background-image: linear-gradient(rgba(46, 47, 66, 0.70),
                         rgba(46, 47, 66, 0.70)),
                         url(../images/hero_tab.jpg);
         }
+    }
     @media (min-width: 1158px){
         .hero{
             background-image: linear-gradient(rgba(46, 47, 66, 0.70),
@@ -274,8 +241,33 @@ img{
                         url(../images/hero.jpg);
         }
     }
+
+
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx), (max-width: 767px){
+    .hero{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+        rgba(46, 47, 66, 0.70)),
+        url(../images/hero_mob2x.jpg); 
     }
 }
+      @media (min-width: 768px){
+        .hero{
+            background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+                    rgba(46, 47, 66, 0.70)),
+                    url(../images/hero_tab2x.jpg);
+        }
+    }
+     @media (min-width: 1158px){
+        .hero{
+            background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+                        rgba(46, 47, 66, 0.70)),
+                        url(../images/hero2x.jpg);
+        }
+     }
+
 
 .section-title{
     background-color: #2E2F42;
@@ -319,17 +311,17 @@ img{
     .section-title{
         padding: 112px 0;
     }
-}
-@media (min-width: 768px){
     .title{
             font-size: 56px;
             font-weight: 700;
             line-height: 1.071;
             letter-spacing: 0.02em;
-            width: 496px;
-            margin-bottom: 36px;
-    }
-} 
+            width: 496px; 
+}
+}
+
+
+
 
 
 @media screen and (min-width: 1158px){
@@ -342,6 +334,10 @@ img{
     }
 
 }
+
+
+               /*========================FEATURE SECTION=======================*/
+
 .section-feature{
     padding: 96px 0;
 }
@@ -428,6 +424,10 @@ color: #434455;
         font-weight: 400;
     }
 }
+
+
+                             /*==================TEAM SECTION================*/
+
 .team-section{
     padding: 96px 0;
     background-color: #F4F4FD;
@@ -499,6 +499,9 @@ color: #434455;
     fill: #f4f4fd;
 }
 @media (min-width: 768px){
+    .container-team{
+        width: 584px;
+    }
     .team-list{
         flex-direction: row;
         flex-wrap: wrap;
@@ -509,6 +512,9 @@ color: #434455;
     }
 }
 @media (min-width: 1158px){
+    .container-team{
+        min-width: 1158px;
+    }
     .team-section{
         padding: 120px 0;
     }
@@ -530,7 +536,8 @@ color: #434455;
             background-color: #404BBF;
 }
 }
-                             /*========Portfolio=========*/ 
+                             /*================PORTFOLIO SECTION==================*/ 
+
 
 .section-portfolio{
     padding: 96px 0;
@@ -624,7 +631,7 @@ color: #434455;
 }
 }
  
-                                        /* Footer section */
+                          /*=====================FOOTER SECTION================== */
 
 .footer-section{
     background-color: #2E2F42;
@@ -742,7 +749,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 @media (min-width: 768px){
     .container-footer{
         align-items: baseline;
-        margin: 0 auto;
         width: 584px;
         display: flex;
         flex-direction: row;
@@ -812,7 +818,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
-                                      /* MODAL WINDOW */
+                              /*=====================MODAL WINDOW===================*/
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -1038,7 +1045,9 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
 }
 
-                                       /*MENU HEADER*/
+
+                       /*====================MENU MOBILE HEADER=================*/
+
 .backdrop-header{
     position: fixed;
     top: 0;
