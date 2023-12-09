@@ -317,14 +317,16 @@ img{
             line-height: 1.071;
             letter-spacing: 0.02em;
             width: 496px; 
+            margin-bottom: 36px;
 }
 }
-
-
 
 
 
 @media screen and (min-width: 1158px){
+    .section-title{
+        padding: 188px 0;
+    }
     .title{
          margin-bottom: 48px;
     }
@@ -447,6 +449,7 @@ color: #434455;
     flex-direction: column;
     gap: 72px;
     justify-content: center;
+    align-items: center;
 }
 .team-item{
     background-color: #FFFFFF;
@@ -508,12 +511,13 @@ color: #434455;
         gap: 64px 24px;
     }
    .team-item{
-        width: calc((100% - 48px) / 2);
+        width: calc((100% - 24px) / 2);
     }
 }
 @media (min-width: 1158px){
     .container-team{
         min-width: 1158px;
+        padding: 0 15px;
     }
     .team-section{
         padding: 120px 0;
@@ -761,9 +765,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     .social-media-text{
         text-align: start;
     }
-    .subscribe-area{
-        margin-right: 25px;
-    }
     .subscribe-text{
         text-align: start;
     }
@@ -780,6 +781,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         width: 1158px;
         align-items: baseline;
         padding: 0 15px;
+        gap: 0;
         margin: 0 auto;
         max-width: 1158px;
     }
@@ -1015,12 +1017,12 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         padding: 72px 24px 24px 24px;
     }
 }
-@media (min-width: 1158px){
+
     .button-close-form:focus,
     .button-close-form:hover{
     background-color: #404BBF;
     border: none;
-}
+    }
     .button-close-form:focus,
     .button-close-form:hover .icon-close-form{
     fill: #FFF;
@@ -1043,7 +1045,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     .form-button:focus {
      background-color: #404BBF;
         }
-}
+
 
 
                        /*====================MENU MOBILE HEADER=================*/
